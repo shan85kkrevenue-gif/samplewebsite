@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML Login form</title>
+ <link rel="stylesheet" type = "text/css" href="global.css">
+</head>
+<body>
+    <form name="loginForm" method="post" action="newpage.html">
+    <div class="form-container">
+        <div class ="user-img"></div>
+        <ul class="list">
+            <li><h2>Member Login</h2></li>
+            <li><input type="text" name="UserName" placeholder="User Name"></li>
+            <li><input type="password" name="Password" placeholder="**********"></li>
+           <!--  <li><input type="button" name="Login" value="Login"></li> -->
+            <li><input type="submit" onclick="return check(this.form)" value="Login"></li>
+            <td ><input type="Reset"></td>
+            <li style="color:red">Forget Password ?</li>
+        </ul>
+    </div>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.UserName.value == "dgp" && form.Password.value == "dgp")
+{
+	return true;
+   // <a href="/home/navaskk/Documents/website2/newpage.html">Visit W3Schools.com!</a> 
+   // window.location.replace("http://www.w3schools.com");
+
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+</body>
+</html>
